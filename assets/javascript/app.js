@@ -1,33 +1,42 @@
-// User Clicks Start
-// Timer begins (60 second countdown)
-// Timer displays countdown in HTML and Console
-// Questions only become visable after user clicks Start
-// User scrolls through list of questions and answers True or Fale
-// Game over when timer runs out, or user reaches the bottom and slects 'Done' button
-// Correct Answers, Incorrect Answers, and Unanswered questions are displayed
-
-
-var number = 60;
+var number = 10;
 var intervalId;
+var timerIsRunning = false;
+
 
 $("#start").click(function() {
     console.log("button was clicked");
-});
+// make button clickable to user only once per 60 second interval
 
-function run() {
-    intervalId = setInterval(decrement, 1000);
-}
-
-function decrement() {
-    number--;
-    $("#timeleft").html("<h2>" + number + "</h2>");
-    if (number === 0) {
-        stop();
-        alert("Time Up!");
+    function begin() {
+        intervalId = setInterval(decrement, 1000);
+        timerIsRunning = true;
     }
-};
 
-function stop() {
-    clearInterval(intervalId);
-}
-run();
+    function decrement() {
+        number--;
+        $("#timeleft").html("<h2>" + number + "</h2>");
+        if (number === 0) {
+            stop();
+            $("#timeleft").html("Time!");
+        }
+
+    };
+
+    function stop() {
+        clearInterval(intervalId);
+        timerIsRunning = false;
+    }
+
+    if (timerIsRunning === false){
+        (number = 10);
+    }
+
+    begin();
+
+// on Start button click, questions become visible
+// when timer is complete questions become hidden
+// user selects true or false button for each question
+// true and false buttons remain highligted once user selects answer
+
+
+});

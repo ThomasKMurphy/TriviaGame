@@ -1,3 +1,7 @@
 .wrapper {
     text-align: center;
 }
+
+#questions {
+  visibility: hidden;
+}
