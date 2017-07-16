@@ -2,6 +2,6 @@
     text-align: center;
 }
 
-#questions {
+.questions {
   visibility: hidden;
 }

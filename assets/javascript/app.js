@@ -2,6 +2,13 @@ var number = 10;
 var intervalId;
 var timerIsRunning = false;
 
+$("#start").click(function(){
+    $(".questions").toggleClass();
+    // if timer is done running, have questions dissappear
+    if (number === 0) {
+        $(".questions").toggleClass();
+    }
+});
 
 $("#start").click(function() {
     console.log("button was clicked");
@@ -32,11 +39,5 @@ $("#start").click(function() {
     }
 
     begin();
-
-// on Start button click, questions become visible
-// when timer is complete questions become hidden
-// user selects true or false button for each question
-// true and false buttons remain highligted once user selects answer
-
 
 });
