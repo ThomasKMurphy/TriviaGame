@@ -7,14 +7,11 @@ var displayScore = false;
 
 $("#start").click(function(){
     $(".questions").toggleClass();
-});
+    console.log("button was clicked");
+
 // make buttons clickable to user only once per 60 second interval
 
 // when buttons are clicked and active, changed background color to: #00FFFF
-
-
-$("#start").click(function() {
-    console.log("button was clicked");
 
     function begin() {
         intervalId = setInterval(decrement, 1000);
@@ -45,9 +42,9 @@ $("#start").click(function() {
     }
 
 
-        // assign "correct" true and false values to each question
+        // assign "correct" true and false values to each question??
 
-        // when timeIsRunning === false, display user score in "0/10" in <div class="score">
+        // when timeIsRunning === false, display user score in "0/10" format in <div class="score">
 
     begin();
 
