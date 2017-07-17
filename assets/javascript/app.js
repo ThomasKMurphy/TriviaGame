@@ -6,7 +6,6 @@ var displayScore = false;
 
 
 $("#start").click(function(){
-    $(".questions").toggleClass();
     console.log("button was clicked");
 
 // make buttons clickable to user only once per 60 second interval
@@ -14,6 +13,7 @@ $("#start").click(function(){
 // when buttons are clicked and active, changed background color to: #00FFFF
 
     function begin() {
+        $(".questions").toggleClass();
         intervalId = setInterval(decrement, 1000);
         timerIsRunning = true;
         questionsVisable = true;
@@ -26,21 +26,18 @@ $("#start").click(function(){
             stop();
             $("#timeleft").html("Time!");
         }
-    };
+    }
 
     function stop() {
+        $(".questions").toggleClass(); //not sure why this won't toggle back to visibilty: hidden
         clearInterval(intervalId);
         timerIsRunning = false;
         questionsVisable = false;    
-    }
-
-    if (timerIsRunning === false) {
+         if (timerIsRunning === false) {
         (number = 30); 
+    }}
 
         // when timeIsRunning === false, have questions visibility: hidden 
-        $(".questions").toggleClass();
-    }
-
 
         // assign "correct" true and false values to each question??
 
