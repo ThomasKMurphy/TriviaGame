@@ -1,8 +1,22 @@
 .wrapper {
     text-align: center;
+
+}
+
+#trivia {
+  font-family: 'Audiowide', cursive;
+}
+
+#timeleft {
+  font-family: 'Audiowide', cursive;
+}
+
+.score {
+  font-family: 'Audiowide', cursive;
 }
 
 .questions {
+  font-family: 'Play', sans-serif;
   visibility: hidden;
 }
 
@@ -10,3 +24,7 @@
   background-color: #00FFFF;
 
 }*/
+
+button:active{
+    background: #00FFFF;
+}
