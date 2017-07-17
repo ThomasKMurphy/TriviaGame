@@ -3,6 +3,7 @@ var intervalId;
 var timerIsRunning = false;
 var questionsVisable = false;
 var displayScore = false;
+var score = 0;
 
 
 $("#start").click(function(){
@@ -39,7 +40,11 @@ $("#start").click(function(){
         
         // when timeIsRunning === false, display user score in <div class="score">
         // assign "correct" true and false values to each question
+       
         // for question 1, if user selects "True", userScore ++;
+        // if (userSelect === true) {
+        //     score++;
+        // }
         // for question 2, if user selects "False", userScore ++;
         // for question 3, if user selects "True", userScore ++;
         // for question 4, if user selects "True", userScore ++;
