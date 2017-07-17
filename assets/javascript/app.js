@@ -36,12 +36,19 @@ $("#start").click(function(){
          if (timerIsRunning === false) {
         (number = 30); 
     }}
-
-        // when timeIsRunning === false, have questions visibility: hidden 
-
-        // assign "correct" true and false values to each question??
-
-        // when timeIsRunning === false, display user score in "0/10" format in <div class="score">
+        
+        // when timeIsRunning === false, display user score in <div class="score">
+        // assign "correct" true and false values to each question
+        // for question 1, if user selects "True", userScore ++;
+        // for question 2, if user selects "False", userScore ++;
+        // for question 3, if user selects "True", userScore ++;
+        // for question 4, if user selects "True", userScore ++;
+        // for question 5, if user selects "False", userScore ++;
+        // for question 6, if user selects "True", userScore ++;
+        // for question 7, if user selects "True", userScore ++;
+        // for question 8, if user selects "False", userScore ++;
+        // for question 9, if user selects "True", userScore ++;
+        // for question 10, if user selects "False", userScore ++;
 
     begin();
 
