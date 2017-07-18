@@ -54,7 +54,7 @@ $("#start").click(function(){
 
          // function scoreBoard() {
  //        score++;
- //        $("#score").html("<h2>" + score + "/10</h2>");
+ //        $(".score").html("<h2>" + score + "/10</h2>");
  //            if (timerIsRunning === true) {
  //            // do not display in html;
  //           else (timerIsRunner === false) {
