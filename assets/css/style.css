@@ -20,11 +20,10 @@
   visibility: hidden;
 }
 
-/*button {
-  background-color: #00FFFF;
+button {
+  font-family: 'Play', sans-serif;
+}
 
-}*/
-
-button:active{
-    background: #00FFFF;
+button.active {
+    background-color: #00FFFF;
 }

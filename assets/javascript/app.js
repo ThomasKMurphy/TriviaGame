@@ -4,13 +4,13 @@ var timerIsRunning = false;
 var questionsVisable = false;
 var score = 0;
 
+$("button").click(function() {
+    $(this).toggleClass("active");
+    // make buttons clickable to user only once per 60 second interval
+});
 
 $("#start").click(function(){
     console.log("button was clicked");
-
-// make buttons clickable to user only once per 60 second interval
-
-// when buttons are clicked and active, changed background color to: #00FFFF
 
     function begin() {
         $(".questions").toggleClass();
