@@ -1,29 +1,41 @@
-.wrapper {
-    text-align: center;
-
-}
-
-#trivia {
-  font-family: 'Audiowide', cursive;
-}
-
-#timeleft {
-  font-family: 'Audiowide', cursive;
-}
-
-.score {
-  font-family: 'Audiowide', cursive;
-}
-
-.questions {
-  font-family: 'Play', sans-serif;
-  visibility: hidden;
-}
-
 button {
   font-family: 'Play', sans-serif;
+  font-size: 15px;
+  background: lightgray;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
 }
 
-button.active {
-    background-color: #00FFFF;
+#wrapper {
+  text-align: center;
+}
+
+#title {
+  font-family: 'Audiowide', cursive;
+  background: lightgray;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+#counter {
+  font-family: 'Audiowide', cursive;
+  margin-bottom: 25px;
+}
+
+#end {
+  margin-top: 25px;
+}
+
+#subwrapper {
+  background: lightgray;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 10px;
 }
